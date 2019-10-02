@@ -13,8 +13,6 @@ LOCAL_SHARED_LIBRARIES := \
     libbase \
     libhardware \
     libhidlbase \
-    libhidltransport \
-    libhwbinder \
     libutils \
     android.hardware.ir@1.0
 
