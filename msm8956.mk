@@ -459,10 +459,6 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
 
-# Widevine
-PRODUCT_PACKAGES += \
-    android.hardware.drm@1.0-service.widevine
-
 # VR
 PRODUCT_PACKAGES += \
     android.hardware.vr@1.0-impl:64 \
@@ -522,11 +518,6 @@ PRODUCT_COPY_FILES += \
 # AdvancedControls
 PRODUCT_PACKAGES += \
     AdvancedControls
-
-#Zuk Extras
-PRODUCT_PACKAGES += \
-    ZukPref
-
 
 # Cast hacks
 PRODUCT_PROPERTY_OVERRIDES += \
