@@ -229,6 +229,7 @@ TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
+    /system/vendor/lib/mediadrm/libwvdrmengine.so|libprotobuf_shim.so \
     /system/lib64/lib-imsvideocodec.so|libshim_ims.so
 
 # SELinux

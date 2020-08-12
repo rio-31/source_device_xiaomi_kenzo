@@ -457,6 +457,10 @@ PRODUCT_PACKAGES += \
     libshim_ims \
     libshims_imsrcsd
 
+# Widevine DRM
+PRODUCT_PACKAGES += \
+    libprotobuf_shim
+
 # Strip debug
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
