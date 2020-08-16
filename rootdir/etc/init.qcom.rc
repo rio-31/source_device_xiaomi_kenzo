@@ -522,6 +522,9 @@ service iop /system/vendor/bin/iop
     disabled
     socket iop seqpacket 0666 root system
 
+    # WiFi firmware path
+    chown wifi wifi /sys/module/bcmdhd/parameters/firmware_path
+
 on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed"
     #WDSP FW boot sysfs node used by STHAL
