@@ -324,9 +324,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.0 \
     android.hardware.secure_element@1.0
 
-PRODUCT_BOOT_JARS += \
-    ims-ext-common_system
-
 # IPA Manager
 #PRODUCT_PACKAGES += \
 #    ipacm \
@@ -443,7 +440,8 @@ PRODUCT_PACKAGES += \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
-    qti_telephony_utils.xml
+    qti_telephony_utils.xml \
+    telephony-ext
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
@@ -458,7 +456,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libshims_dpmd \
     libshim_ims \
-    libshims_imsrcsd
+    libshims_imsrcsd \
+    libcutils_shim
 
 # Strip debug
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
