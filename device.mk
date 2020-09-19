@@ -119,11 +119,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml
 
-# Doze mode
-PRODUCT_PACKAGES += \
-    CustomDoze \
-    XiaomiParts
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@5.0 \
@@ -548,10 +543,6 @@ PRODUCT_COPY_FILES += \
 #Google Camera
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/privapp-permissions-gcam.xml:system/product/etc/permissions/privapp-permissions-gcam.xml
-
-# AdvancedControls
-PRODUCT_PACKAGES += \
-    AdvancedControls
 
 # Cast hacks
 PRODUCT_PROPERTY_OVERRIDES += \
