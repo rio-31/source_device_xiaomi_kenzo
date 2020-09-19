@@ -32,10 +32,6 @@ PRODUCT_NAME := aosp_kenzo
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi Note 3
 TARGET_VENDOR := Xiaomi
-
-IS_PHONE := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Use the latest approved GMS identifiers unless running a signed build
@@ -51,5 +47,3 @@ TARGET_USE_JELLY := true
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 TARGET_BOOT_ANIMATION_RES := 1080
-
-USE_CCACHE=0
