@@ -18,7 +18,6 @@
 DEVICE_PATH := device/xiaomi/kenzo
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
-ALLOW_MISSING_DEPENDENCIES := true
 
 # Architecture
 TARGET_ARCH := arm64
@@ -39,8 +38,6 @@ TARGET_BOARD_PLATFORM := msm8952
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno510
 
 TARGET_USES_64_BIT_BINDER := true
-
-BUILD_BROKEN_PHONY_TARGETS := true
 
 ENABLE_CPUSETS := true
 
@@ -259,9 +256,6 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/doubletap2wake"
 # Enable DRM plugins 64 bit compilation
 TARGET_ENABLE_MEDIADRM_64 := true
 
-BUILD_BROKEN_DUP_RULES := true
-SELINUX_IGNORE_NEVERALLOWS := true
-
 # Assertions
 TARGET_OTA_ASSERT_DEVICE := kate,kenzo
 
@@ -284,3 +278,9 @@ BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
 # inherit from the proprietary version
 -include vendor/xiaomi/kenzo/BoardConfigVendor.mk
+
+# Broken Rules
+ALLOW_MISSING_DEPENDENCIES := true
+SELINUX_IGNORE_NEVERALLOWS := true
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_PHONY_TARGETS := true
