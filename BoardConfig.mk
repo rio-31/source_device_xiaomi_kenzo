@@ -59,7 +59,7 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 
 #Prebuilt Kernel
 ifeq ($(TARGET_PREBUILT_KERNEL),)
- TARGET_KERNEL_CLANG_COMPILE := true
+ TARGET_KERNEL_CLANG_COMPILE := false
  TARGET_KERNEL_CONFIG := lineageos_kenzo_defconfig
  TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8956
 endif
