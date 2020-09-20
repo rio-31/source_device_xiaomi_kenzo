@@ -29,6 +29,15 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info_extcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_extcodec.xml \
     $(LOCAL_PATH)/audio/mixer_paths_wcd9326.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_wcd9326.xml
 
+#Prebuilt Kernel
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+LOCAL_KERNEL := $(LOCAL_PATH)/kernel/kernel
+else
+LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+endif
+
+PRODUCT_COPY_FILES += \
+     $(LOCAL_KERNEL):kernel
 
 # Fingerprint
 PRODUCT_PACKAGES += \
