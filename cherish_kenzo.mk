@@ -20,15 +20,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from kipper device
 $(call inherit-product, device/xiaomi/kenzo/device.mk)
 
-# Inherit some common BlissOS stuff.
-$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+# Inherit some common CherishOS stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 
 # Set those variables here to overwrite the inherited values.
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := kenzo
-PRODUCT_NAME := havoc_kenzo
+PRODUCT_NAME := cherish_kenzo
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi Note 3
 TARGET_VENDOR := Xiaomi
@@ -54,11 +54,13 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 USE_CCACHE=0
 
-# Havoc build type
-HAVOC_BUILD_TYPE := Official
-ro.havoc.maintainer := Magicxavi
+#Official
+export CHERISH_BUILD_TYPE:=OFFICIAL
 
-PRODUCT_PACKAGES += \
-    AdvancedControls \
-    RemovePackages \
-    Recorder
+# Vanilla
+#CHERISH_NOGAPPS=true
+
+# Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.cherish.maintainer=MrJarvis698
+
