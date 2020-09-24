@@ -164,6 +164,7 @@ service vendor.energy-awareness /system/vendor/bin/energy-awareness
     user root
     group system
     oneshot
+    group root
 
 # Logcat
 service logger /system/bin/logcat -b all -D -f /cache/boot_log.txt
