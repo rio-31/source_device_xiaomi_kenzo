@@ -456,6 +456,7 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
+    libshims_dpmd \
     libshim_ims \
     libshims_imsrcsd
 
