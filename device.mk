@@ -105,7 +105,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
 #Android net
-
 PRODUCT_PACKAGES += \
    libandroid_net \
    libandroid_net_32
@@ -223,6 +222,10 @@ include $(LOCAL_PATH)/rootdir/charger/charger.mk
 # DataServices
 PRODUCT_PACKAGES += \
     librmnetctl
+
+# Disable psi monitors
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lmk.use_psi=false
 
 # Display
 PRODUCT_PACKAGES += \
