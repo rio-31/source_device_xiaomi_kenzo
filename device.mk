@@ -454,9 +454,10 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service
 
-# Shim
+# Shims
 PRODUCT_PACKAGES += \
-    libshim_ims
+    libshim_ims \
+    libshims_imsrcsd
 
 # Strip debug
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
