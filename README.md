@@ -1,4 +1,4 @@
-Device Tree for Xiaomi Redmi Note 3 (kenzo)
+Device Tree for Xiaomi Redmi Note 3 (kenzo)-R
 ===========================================
 
 Basic   | Spec Sheet
@@ -15,3 +15,6 @@ Camera  | Primary: 16 MP, f/2.0, phase detection autofocus, dual-LED (dual tone)
 	| Secondary: 5 MP, f/2.0, 1080p
 
 ![Xiaomi Redmi Note 3](http://cdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-note-3-1.jpg "Xiaomi Redmi Note 3")
+
+Special Thanks To "[DevOtağ Open Source](https://github.com/DevOtag-Open-Source)" "[Ahmet Çelik-trkzmn](https://github.com/trkzmn)" "[Ahmet-NaytSeyd](https://github.com/NaytSeyd)" For Kenzo R Trees.
+
