@@ -14,10 +14,10 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/revengeos_kenzo.mk
+    $(LOCAL_DIR)/octavi_kenzo.mk
 
 COMMON_LUNCH_CHOICES := \
-    revengeos_kenzo-eng \
-    revengeos_kenzo-user \
-    revengeos_kenzo-userdebug
+    octavi_kenzo-eng \
+    octavi_kenzo-user \
+    octavi_kenzo-userdebug
 

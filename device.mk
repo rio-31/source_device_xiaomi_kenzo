@@ -577,6 +577,22 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_ODM_PROPERTIES += \
     ro.vendor.qti.va_odm.support=1
 
+YOUR_HW_PLATFORM := msm8952
+
+# Hardware
+PRODUCT_BOARD_PLATFORM := $(YOUR_HW_PLATFORM)
+PRODUCT_USES_QCOM_HARDWARE := true
+
+# HALS
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/$(YOUR_HW_PLATFORM)/audio
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/$(YOUR_HW_PLATFORM)/display
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/$(YOUR_HW_PLATFORM)/media
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+$(LOCAL_PATH) \
+hardware/qcom-caf/$(YOUR_HW_PLATFORM)
+
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.dpm.feature=0
@@ -584,3 +600,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # DumpState
 PRODUCT_PACKAGES += \
     android.hardware.dumpstate@1.1-service-kenzo
+    
