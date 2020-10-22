@@ -14,8 +14,8 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_kenzo.mk
+    $(LOCAL_DIR)/aosp_kenzo.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_kenzo-userdebug \
-    cherish_kenzo-eng
+    aosp_kenzo-userdebug \
+    aosp_kenzo-eng
