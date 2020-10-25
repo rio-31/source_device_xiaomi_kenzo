@@ -218,6 +218,13 @@ persist.sys.wfd.virtual=0
 ro.hdmi.enable=true 
 ro.hdmi.mirror.enable=true
 
+# Logging
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.log.tag.improveTouch=WARNING \
+    persist.log.tag.ThermalEngine=WARNING \
+    persist.log.tag.WCNSS_FILTER=WARNING
+
+
 # Higher fling velocities for smooth scrolling and to provide better responsiveness - From HalogenOS Team
 ro.min.fling_velocity=140
 ro.max.fling_velocity=40000
