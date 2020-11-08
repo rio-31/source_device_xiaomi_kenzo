@@ -14,8 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_kenzo.mk
+    $(LOCAL_DIR)/revengeos_kenzo.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_kenzo-userdebug \
-    havoc_kenzo-eng
+    revengeos_kenzo-user \
+    revengeos_kenzo-userdebug \
+    revengeos_kenzo-eng
