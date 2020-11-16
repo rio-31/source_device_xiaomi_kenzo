@@ -580,6 +580,9 @@ PRODUCT_ODM_PROPERTIES += \
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.dpm.feature=0
+    
+
+PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 
 # DumpState
 PRODUCT_PACKAGES += \
