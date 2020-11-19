@@ -587,6 +587,9 @@ PRODUCT_ODM_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.dpm.feature=0
 
+#Enforce VINTF MANIFEST
+PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
+
 # DumpState
 PRODUCT_PACKAGES += \
     android.hardware.dumpstate@1.1-service-kenzo
