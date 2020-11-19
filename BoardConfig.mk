@@ -233,7 +233,10 @@ TARGET_USES_NO_MTU_IPACM := true
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
-    /system/lib64/lib-imsvideocodec.so|libshim_ims.so
+    /system/lib64/lib-imsvideocodec.so|libshim_ims.so \
+   /system/vendor/lib64/libsettings.so|/system/vendor/lib64/libprotobuf-cpp-full-v29.so \
+   /system/vendor/lib/libwvhidl.so|/system/vendor/lib/libprotobuf-cpp-lite-v29.so \
+   /system/vendor/lib64/libwvhidl.so|/system/vendor/lib64/libprotobuf-cpp-lite-v29.so
 
 # SELinux
 #BOARD_SEPOLICY_VERS := 29.0
