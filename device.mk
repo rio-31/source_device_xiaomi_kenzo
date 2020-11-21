@@ -43,6 +43,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fingerprint.msm8952
 
+# fwk-detect
+PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect
+
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/uinput-fpc.idc:system/usr/idc/uinput-fpc.idc
