@@ -35,6 +35,7 @@ on early-init
     chmod 0755 /sys/kernel/debug
     chown root system /dev/kmsg
     chmod 0620 /dev/kmsg
+    chmod 0644 /proc/cmdline
   
 on init
     # Support legacy paths
