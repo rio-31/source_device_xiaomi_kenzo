@@ -187,17 +187,27 @@ service boot_log_kernel /system/bin/logcat -b kernel -D -f /cache/boot_log_kerne
     disabled
     oneshot
 
+service boot_log_radio /system/bin/logcat -b radio -D -f /cache/boot_log_radio.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
 on post-fs-data
 # Clear existing log and start the service
     rm /cache/boot_log_full.txt
     rm /cache/boot_log_crash.txt
     rm /cache/boot_log_kernel.txt
+    rm /cache/boot_log_radio.txt
     start boot_log
     start boot_log_crash
     start boot_log_kernel
+    start boot_log_radio
 
 on property:sys.boot_completed=1
 # Stop the logger service
     stop boot_log
     stop boot_log_crash
     stop boot_log_kernel
+    stop boot_log_radio
